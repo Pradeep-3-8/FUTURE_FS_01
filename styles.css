@@ -1,0 +1,108 @@
+/* Default Light Mode */
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: red;
+    color: black;
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Dark Mode Button */
+#darkModeToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+#darkModeToggle:hover {
+    transform: rotate(180deg);
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+    border-bottom:2px solid red;
+    opacity: 1;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+}
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Project Cards */
+.project-card {
+    background: black;
+    padding: 20px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid red;
+    box-shadow: 0 5px 10px rgba(255, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+input, textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid red;
+    border-radius: 5px;
+    background: black;
+    color: white;
+}
+button {
+    padding: 10px 20px;
+    background: red;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size:16px;
+    transition: background 0.3s;
+}
+button:hover {
+    background: darkred;
+}
+a{
+    color: red;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover{
+    color:darkred;
+}
+
+p,li
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
